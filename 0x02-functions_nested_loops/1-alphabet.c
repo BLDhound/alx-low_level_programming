@@ -13,4 +13,6 @@ void print_aplhabet(void)
 	}
 
 	_putchar('\n');
+
 }
+
