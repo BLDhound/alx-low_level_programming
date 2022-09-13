@@ -7,12 +7,9 @@ void print_aplhabet(void)
 {
 	char c;
 
-	c = 'a';
-
-	while (c <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
-		c++;
 	}
 
 	_putchar('\n');
