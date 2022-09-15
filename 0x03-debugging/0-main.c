@@ -9,7 +9,7 @@ int postitive_or_negative()
 {
 	int n;
 
-	n = 20;
+	n = 0;
 	positive_or_negative(n);
 
 	return (0);
