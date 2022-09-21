@@ -1,9 +1,8 @@
 #include "main.h"
 #include "string.h"
 /**
- * *_strcat - function that concatenates two strings
- * @dest: destination parameter used
- * @src: string value used
+ * length - finds the length of an array
+ * @i: parameter value
  * Return: int
  */
 
