@@ -1,0 +1,22 @@
+# test 4
+NAME		=	school
+SRC			=	main.c school.c
+CC			=	gcc
+CFLAGS		=	-Wall -Werror -Wextra -pedantic
+RM			=	rm -f
+OBJ = $(SRC:%.c=%.o)
+
+all: $(OBJ)
+  $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean:
+	$(RM) *~ $(NAME)
+	$(RM) $(OBJ)
+
+re: oclean all

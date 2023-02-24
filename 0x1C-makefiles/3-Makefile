@@ -1,0 +1,19 @@
+# test 3
+NAME		=	school
+SRC			=	main.c school.c
+CC			=	gcc
+RM			=	rm -f
+OBJ = $(SRC:%.c=%.o)
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
